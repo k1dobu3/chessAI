@@ -1,7 +1,7 @@
 import telebot
 import chess
 import config
-import predictions
+import moves
 
 bot = telebot.TeleBot(config.bot_token)
 
@@ -39,10 +39,10 @@ def process_move(message):
     if gameBoard.turn == player:
         if len(player_move) == 4:
             gameBoard.push_uci(player_move)
-            engine_move = predictions.choose_move(gameBoard, player, color)
+            engine_move = moves.choose_move(gameBoard, player, color)
             gameBoard.push_uci(engine_move.uci())
             bot.reply_to(message, f"Ход бота: {engine_move.uci()}")
-            bot.reply_to(message, predictions.display_board(gameBoard), parse_mode='html')
+            bot.reply_to(message, moves.display_board(gameBoard), parse_mode='html')
         else:
             bot.reply_to(message, "Некорректный ход. Введите ход в формате 'e2e4'.")
     else:
