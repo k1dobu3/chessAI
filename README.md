@@ -23,5 +23,5 @@ cd chessAI
 
 Запустить бота
 ```
-python manage.py
+python main.py
 ```
