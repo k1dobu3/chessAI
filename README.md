@@ -7,11 +7,11 @@
 
 В начале использования программы нас встречает простой интерефейс старта с указанием, как начать и чистой шахматной доской:  
   
-![Alt-текст](https://drive.google.com/file/d/14XCZ21iEspwiT4gw0lW6vuIlc0nrG8mL/view?usp=sharing "Старт игры")
+![Alt-текст](https://drive.google.com/file/d/14XCZ21iEspwiT4gw0lW6vuIlc0nrG8mL/view?usp=sharing)
 
 Затем начинается знакомая все игра в шахматы, причем при каждой игре, мы видим, что бот ходит не по шаблону:  
   
-![Alt-текст](https://drive.google.com/file/d/19g-wKgtQtXhiIcjASQetB51omgm3wkaN/view?usp=sharing "Отличие ходов")
+![Alt-текст](https://drive.google.com/file/d/19g-wKgtQtXhiIcjASQetB51omgm3wkaN/view?usp=sharing)
 
 Итог работы был достигнут - научили ИИ ходить на основе анализа партий профессионалов.
 
